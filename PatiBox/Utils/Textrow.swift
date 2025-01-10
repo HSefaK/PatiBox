@@ -28,3 +28,4 @@ struct TextRow: View {
         .padding(.horizontal)
     }
 }
+

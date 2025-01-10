@@ -56,6 +56,7 @@
 		C3333F4F2D2F48EA0039C745 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F4E2D2F48EA0039C745 /* Constants.swift */; };
 		C3333F512D2F4A8A0039C745 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F502D2F4A8A0039C745 /* PaymentView.swift */; };
 		C3333F532D2FEEC10039C745 /* RegistrationIndividualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F522D2FEEC10039C745 /* RegistrationIndividualView.swift */; };
+		C3333F562D309ED30039C745 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F552D309ED30039C745 /* APIServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +129,7 @@
 		C3333F4E2D2F48EA0039C745 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C3333F502D2F4A8A0039C745 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
 		C3333F522D2FEEC10039C745 /* RegistrationIndividualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationIndividualView.swift; sourceTree = "<group>"; };
+		C3333F552D309ED30039C745 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				C3333F052D2DE7030039C745 /* ViewModels */,
 				C3333F292D2E99750039C745 /* BottomSheets */,
 				C3333F302D2EA0960039C745 /* RegisterFlow */,
+				C3333F542D309EC50039C745 /* NetworkManager */,
 				C3333F412D2EA3090039C745 /* Utils */,
 				C3333E802D2D67EF0039C745 /* Assets.xcassets */,
 				C3333E852D2D67EF0039C745 /* Persistence.swift */,
@@ -311,6 +314,14 @@
 				C3333F4E2D2F48EA0039C745 /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		C3333F542D309EC50039C745 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				C3333F552D309ED30039C745 /* APIServices.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,6 +498,7 @@
 				C3333F362D2EA0DC0039C745 /* AgeandWeightView.swift in Sources */,
 				C3333F322D2EA0A40039C745 /* AnimalSelectionView.swift in Sources */,
 				C3333F4F2D2F48EA0039C745 /* Constants.swift in Sources */,
+				C3333F562D309ED30039C745 /* APIServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
