@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C3333E7D2D2D67EB0039C745 /* PatiBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333E7C2D2D67EB0039C745 /* PatiBoxApp.swift */; };
-		C3333E7F2D2D67EB0039C745 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333E7E2D2D67EB0039C745 /* ContentView.swift */; };
 		C3333E812D2D67EF0039C745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3333E802D2D67EF0039C745 /* Assets.xcassets */; };
 		C3333E842D2D67EF0039C745 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3333E832D2D67EF0039C745 /* Preview Assets.xcassets */; };
 		C3333E862D2D67EF0039C745 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333E852D2D67EF0039C745 /* Persistence.swift */; };
@@ -16,6 +14,48 @@
 		C3333E932D2D67F10039C745 /* PatiBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333E922D2D67F10039C745 /* PatiBoxTests.swift */; };
 		C3333E9D2D2D67F10039C745 /* PatiBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333E9C2D2D67F10039C745 /* PatiBoxUITests.swift */; };
 		C3333E9F2D2D67F10039C745 /* PatiBoxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333E9E2D2D67F10039C745 /* PatiBoxUITestsLaunchTests.swift */; };
+		C3333F102D2DE7030039C745 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333EF92D2DE7030039C745 /* CartView.swift */; };
+		C3333F112D2DE7030039C745 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333EFA2D2DE7030039C745 /* FavoritesView.swift */; };
+		C3333F122D2DE7030039C745 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333EFB2D2DE7030039C745 /* ProductDetailView.swift */; };
+		C3333F132D2DE7030039C745 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333EFC2D2DE7030039C745 /* ProductListView.swift */; };
+		C3333F142D2DE7030039C745 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333EFD2D2DE7030039C745 /* RegistrationView.swift */; };
+		C3333F152D2DE7030039C745 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333EFE2D2DE7030039C745 /* UserProfileView.swift */; };
+		C3333F162D2DE7030039C745 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F002D2DE7030039C745 /* CartViewModel.swift */; };
+		C3333F172D2DE7030039C745 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F012D2DE7030039C745 /* FavoritesViewModel.swift */; };
+		C3333F182D2DE7030039C745 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F022D2DE7030039C745 /* ProductListViewModel.swift */; };
+		C3333F192D2DE7030039C745 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F032D2DE7030039C745 /* RegistrationViewModel.swift */; };
+		C3333F1A2D2DE7030039C745 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F042D2DE7030039C745 /* UserProfileViewModel.swift */; };
+		C3333F1B2D2DE7030039C745 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F062D2DE7030039C745 /* CartItem.swift */; };
+		C3333F1C2D2DE7030039C745 /* FoodPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F072D2DE7030039C745 /* FoodPreference.swift */; };
+		C3333F1D2D2DE7030039C745 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F082D2DE7030039C745 /* Pet.swift */; };
+		C3333F1E2D2DE7030039C745 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F092D2DE7030039C745 /* Product.swift */; };
+		C3333F1F2D2DE7030039C745 /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F0A2D2DE7030039C745 /* ProductCategory.swift */; };
+		C3333F202D2DE7030039C745 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F0B2D2DE7030039C745 /* UserProfile.swift */; };
+		C3333F212D2DE7030039C745 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F0D2D2DE7030039C745 /* ContentView.swift */; };
+		C3333F222D2DE7030039C745 /* PatiBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F0E2D2DE7030039C745 /* PatiBoxApp.swift */; };
+		C3333F242D2DE7CD0039C745 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F232D2DE7CD0039C745 /* ProductDetailViewModel.swift */; };
+		C3333F262D2DE8B90039C745 /* PetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F252D2DE8B90039C745 /* PetType.swift */; };
+		C3333F282D2E992D0039C745 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F272D2E992D0039C745 /* AuthViewModel.swift */; };
+		C3333F2B2D2E99850039C745 /* SigInSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F2A2D2E99850039C745 /* SigInSheet.swift */; };
+		C3333F2D2D2E99AB0039C745 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F2C2D2E99AB0039C745 /* ProfileView.swift */; };
+		C3333F2F2D2EA0720039C745 /* RegisterationFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F2E2D2EA0720039C745 /* RegisterationFlowView.swift */; };
+		C3333F322D2EA0A40039C745 /* AnimalSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F312D2EA0A40039C745 /* AnimalSelectionView.swift */; };
+		C3333F342D2EA0BF0039C745 /* GenderandNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F332D2EA0BF0039C745 /* GenderandNameView.swift */; };
+		C3333F362D2EA0DC0039C745 /* AgeandWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F352D2EA0DC0039C745 /* AgeandWeightView.swift */; };
+		C3333F382D2EA0F80039C745 /* FoodPreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F372D2EA0F80039C745 /* FoodPreferenceView.swift */; };
+		C3333F3A2D2EA12B0039C745 /* ConsumptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F392D2EA12B0039C745 /* ConsumptionView.swift */; };
+		C3333F3C2D2EA1480039C745 /* ProductOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F3B2D2EA1480039C745 /* ProductOptionsView.swift */; };
+		C3333F3E2D2EA1680039C745 /* BrandSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F3D2D2EA1680039C745 /* BrandSelectionView.swift */; };
+		C3333F402D2EA2BA0039C745 /* EmailandPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F3F2D2EA2BA0039C745 /* EmailandPasswordView.swift */; };
+		C3333F432D2EA3180039C745 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F422D2EA3180039C745 /* Styles.swift */; };
+		C3333F452D2EF0140039C745 /* SubscriptionCalculationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F442D2EF0140039C745 /* SubscriptionCalculationView.swift */; };
+		C3333F472D2EFC0C0039C745 /* DeliveryPeriodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F462D2EFC0C0039C745 /* DeliveryPeriodView.swift */; };
+		C3333F492D2EFD700039C745 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F482D2EFD700039C745 /* CheckoutView.swift */; };
+		C3333F4B2D2EFF7E0039C745 /* CheckoutDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F4A2D2EFF7E0039C745 /* CheckoutDetailsView.swift */; };
+		C3333F4D2D2F46980039C745 /* Textrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F4C2D2F46980039C745 /* Textrow.swift */; };
+		C3333F4F2D2F48EA0039C745 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F4E2D2F48EA0039C745 /* Constants.swift */; };
+		C3333F512D2F4A8A0039C745 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F502D2F4A8A0039C745 /* PaymentView.swift */; };
+		C3333F532D2FEEC10039C745 /* RegistrationIndividualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F522D2FEEC10039C745 /* RegistrationIndividualView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +77,6 @@
 
 /* Begin PBXFileReference section */
 		C3333E792D2D67EB0039C745 /* PatiBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatiBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3333E7C2D2D67EB0039C745 /* PatiBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatiBoxApp.swift; sourceTree = "<group>"; };
-		C3333E7E2D2D67EB0039C745 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C3333E802D2D67EF0039C745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3333E832D2D67EF0039C745 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C3333E852D2D67EF0039C745 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +86,48 @@
 		C3333E982D2D67F10039C745 /* PatiBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatiBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3333E9C2D2D67F10039C745 /* PatiBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatiBoxUITests.swift; sourceTree = "<group>"; };
 		C3333E9E2D2D67F10039C745 /* PatiBoxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatiBoxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C3333EF92D2DE7030039C745 /* CartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		C3333EFA2D2DE7030039C745 /* FavoritesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		C3333EFB2D2DE7030039C745 /* ProductDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		C3333EFC2D2DE7030039C745 /* ProductListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		C3333EFD2D2DE7030039C745 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		C3333EFE2D2DE7030039C745 /* UserProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		C3333F002D2DE7030039C745 /* CartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		C3333F012D2DE7030039C745 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		C3333F022D2DE7030039C745 /* ProductListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		C3333F032D2DE7030039C745 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		C3333F042D2DE7030039C745 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
+		C3333F062D2DE7030039C745 /* CartItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+		C3333F072D2DE7030039C745 /* FoodPreference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodPreference.swift; sourceTree = "<group>"; };
+		C3333F082D2DE7030039C745 /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		C3333F092D2DE7030039C745 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		C3333F0A2D2DE7030039C745 /* ProductCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCategory.swift; sourceTree = "<group>"; };
+		C3333F0B2D2DE7030039C745 /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		C3333F0D2D2DE7030039C745 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C3333F0E2D2DE7030039C745 /* PatiBoxApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatiBoxApp.swift; sourceTree = "<group>"; };
+		C3333F232D2DE7CD0039C745 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		C3333F252D2DE8B90039C745 /* PetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetType.swift; sourceTree = "<group>"; };
+		C3333F272D2E992D0039C745 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		C3333F2A2D2E99850039C745 /* SigInSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigInSheet.swift; sourceTree = "<group>"; };
+		C3333F2C2D2E99AB0039C745 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C3333F2E2D2EA0720039C745 /* RegisterationFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationFlowView.swift; sourceTree = "<group>"; };
+		C3333F312D2EA0A40039C745 /* AnimalSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalSelectionView.swift; sourceTree = "<group>"; };
+		C3333F332D2EA0BF0039C745 /* GenderandNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderandNameView.swift; sourceTree = "<group>"; };
+		C3333F352D2EA0DC0039C745 /* AgeandWeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeandWeightView.swift; sourceTree = "<group>"; };
+		C3333F372D2EA0F80039C745 /* FoodPreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPreferenceView.swift; sourceTree = "<group>"; };
+		C3333F392D2EA12B0039C745 /* ConsumptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionView.swift; sourceTree = "<group>"; };
+		C3333F3B2D2EA1480039C745 /* ProductOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOptionsView.swift; sourceTree = "<group>"; };
+		C3333F3D2D2EA1680039C745 /* BrandSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandSelectionView.swift; sourceTree = "<group>"; };
+		C3333F3F2D2EA2BA0039C745 /* EmailandPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailandPasswordView.swift; sourceTree = "<group>"; };
+		C3333F422D2EA3180039C745 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		C3333F442D2EF0140039C745 /* SubscriptionCalculationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionCalculationView.swift; sourceTree = "<group>"; };
+		C3333F462D2EFC0C0039C745 /* DeliveryPeriodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryPeriodView.swift; sourceTree = "<group>"; };
+		C3333F482D2EFD700039C745 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		C3333F4A2D2EFF7E0039C745 /* CheckoutDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutDetailsView.swift; sourceTree = "<group>"; };
+		C3333F4C2D2F46980039C745 /* Textrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textrow.swift; sourceTree = "<group>"; };
+		C3333F4E2D2F48EA0039C745 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C3333F502D2F4A8A0039C745 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		C3333F522D2FEEC10039C745 /* RegistrationIndividualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationIndividualView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +178,13 @@
 		C3333E7B2D2D67EB0039C745 /* PatiBox */ = {
 			isa = PBXGroup;
 			children = (
-				C3333E7C2D2D67EB0039C745 /* PatiBoxApp.swift */,
-				C3333E7E2D2D67EB0039C745 /* ContentView.swift */,
+				C3333F0F2D2DE7030039C745 /* App */,
+				C3333F0C2D2DE7030039C745 /* Models */,
+				C3333EFF2D2DE7030039C745 /* Views */,
+				C3333F052D2DE7030039C745 /* ViewModels */,
+				C3333F292D2E99750039C745 /* BottomSheets */,
+				C3333F302D2EA0960039C745 /* RegisterFlow */,
+				C3333F412D2EA3090039C745 /* Utils */,
 				C3333E802D2D67EF0039C745 /* Assets.xcassets */,
 				C3333E852D2D67EF0039C745 /* Persistence.swift */,
 				C3333E872D2D67EF0039C745 /* PatiBox.xcdatamodeld */,
@@ -131,6 +216,101 @@
 				C3333E9E2D2D67F10039C745 /* PatiBoxUITestsLaunchTests.swift */,
 			);
 			path = PatiBoxUITests;
+			sourceTree = "<group>";
+		};
+		C3333EFF2D2DE7030039C745 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3333EF92D2DE7030039C745 /* CartView.swift */,
+				C3333EFA2D2DE7030039C745 /* FavoritesView.swift */,
+				C3333EFB2D2DE7030039C745 /* ProductDetailView.swift */,
+				C3333EFC2D2DE7030039C745 /* ProductListView.swift */,
+				C3333EFD2D2DE7030039C745 /* RegistrationView.swift */,
+				C3333EFE2D2DE7030039C745 /* UserProfileView.swift */,
+				C3333F2C2D2E99AB0039C745 /* ProfileView.swift */,
+				C3333F2E2D2EA0720039C745 /* RegisterationFlowView.swift */,
+				C3333F502D2F4A8A0039C745 /* PaymentView.swift */,
+				C3333F522D2FEEC10039C745 /* RegistrationIndividualView.swift */,
+			);
+			name = Views;
+			path = "../../../../Downloads/PatiBox-2/Views";
+			sourceTree = "<group>";
+		};
+		C3333F052D2DE7030039C745 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C3333F002D2DE7030039C745 /* CartViewModel.swift */,
+				C3333F012D2DE7030039C745 /* FavoritesViewModel.swift */,
+				C3333F022D2DE7030039C745 /* ProductListViewModel.swift */,
+				C3333F032D2DE7030039C745 /* RegistrationViewModel.swift */,
+				C3333F042D2DE7030039C745 /* UserProfileViewModel.swift */,
+				C3333F232D2DE7CD0039C745 /* ProductDetailViewModel.swift */,
+				C3333F272D2E992D0039C745 /* AuthViewModel.swift */,
+			);
+			name = ViewModels;
+			path = "../../../../Downloads/PatiBox-2/ViewModels";
+			sourceTree = "<group>";
+		};
+		C3333F0C2D2DE7030039C745 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3333F062D2DE7030039C745 /* CartItem.swift */,
+				C3333F072D2DE7030039C745 /* FoodPreference.swift */,
+				C3333F082D2DE7030039C745 /* Pet.swift */,
+				C3333F092D2DE7030039C745 /* Product.swift */,
+				C3333F0A2D2DE7030039C745 /* ProductCategory.swift */,
+				C3333F0B2D2DE7030039C745 /* UserProfile.swift */,
+				C3333F252D2DE8B90039C745 /* PetType.swift */,
+			);
+			name = Models;
+			path = "../../../../Downloads/PatiBox-2/Models";
+			sourceTree = "<group>";
+		};
+		C3333F0F2D2DE7030039C745 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C3333F0D2D2DE7030039C745 /* ContentView.swift */,
+				C3333F0E2D2DE7030039C745 /* PatiBoxApp.swift */,
+			);
+			name = App;
+			path = "../../../../Downloads/PatiBox-2/App";
+			sourceTree = "<group>";
+		};
+		C3333F292D2E99750039C745 /* BottomSheets */ = {
+			isa = PBXGroup;
+			children = (
+				C3333F2A2D2E99850039C745 /* SigInSheet.swift */,
+				C3333F4A2D2EFF7E0039C745 /* CheckoutDetailsView.swift */,
+			);
+			path = BottomSheets;
+			sourceTree = "<group>";
+		};
+		C3333F302D2EA0960039C745 /* RegisterFlow */ = {
+			isa = PBXGroup;
+			children = (
+				C3333F312D2EA0A40039C745 /* AnimalSelectionView.swift */,
+				C3333F332D2EA0BF0039C745 /* GenderandNameView.swift */,
+				C3333F352D2EA0DC0039C745 /* AgeandWeightView.swift */,
+				C3333F372D2EA0F80039C745 /* FoodPreferenceView.swift */,
+				C3333F392D2EA12B0039C745 /* ConsumptionView.swift */,
+				C3333F3B2D2EA1480039C745 /* ProductOptionsView.swift */,
+				C3333F3D2D2EA1680039C745 /* BrandSelectionView.swift */,
+				C3333F3F2D2EA2BA0039C745 /* EmailandPasswordView.swift */,
+				C3333F442D2EF0140039C745 /* SubscriptionCalculationView.swift */,
+				C3333F462D2EFC0C0039C745 /* DeliveryPeriodView.swift */,
+				C3333F482D2EFD700039C745 /* CheckoutView.swift */,
+			);
+			path = RegisterFlow;
+			sourceTree = "<group>";
+		};
+		C3333F412D2EA3090039C745 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C3333F422D2EA3180039C745 /* Styles.swift */,
+				C3333F4C2D2F46980039C745 /* Textrow.swift */,
+				C3333F4E2D2F48EA0039C745 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +443,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3333F182D2DE7030039C745 /* ProductListViewModel.swift in Sources */,
+				C3333F262D2DE8B90039C745 /* PetType.swift in Sources */,
+				C3333F382D2EA0F80039C745 /* FoodPreferenceView.swift in Sources */,
+				C3333F192D2DE7030039C745 /* RegistrationViewModel.swift in Sources */,
+				C3333F3E2D2EA1680039C745 /* BrandSelectionView.swift in Sources */,
+				C3333F4B2D2EFF7E0039C745 /* CheckoutDetailsView.swift in Sources */,
+				C3333F172D2DE7030039C745 /* FavoritesViewModel.swift in Sources */,
+				C3333F132D2DE7030039C745 /* ProductListView.swift in Sources */,
+				C3333F4D2D2F46980039C745 /* Textrow.swift in Sources */,
+				C3333F112D2DE7030039C745 /* FavoritesView.swift in Sources */,
+				C3333F242D2DE7CD0039C745 /* ProductDetailViewModel.swift in Sources */,
+				C3333F472D2EFC0C0039C745 /* DeliveryPeriodView.swift in Sources */,
+				C3333F1E2D2DE7030039C745 /* Product.swift in Sources */,
+				C3333F2F2D2EA0720039C745 /* RegisterationFlowView.swift in Sources */,
+				C3333F3A2D2EA12B0039C745 /* ConsumptionView.swift in Sources */,
+				C3333F212D2DE7030039C745 /* ContentView.swift in Sources */,
+				C3333F532D2FEEC10039C745 /* RegistrationIndividualView.swift in Sources */,
+				C3333F452D2EF0140039C745 /* SubscriptionCalculationView.swift in Sources */,
+				C3333F122D2DE7030039C745 /* ProductDetailView.swift in Sources */,
+				C3333F2B2D2E99850039C745 /* SigInSheet.swift in Sources */,
+				C3333F1B2D2DE7030039C745 /* CartItem.swift in Sources */,
+				C3333F1A2D2DE7030039C745 /* UserProfileViewModel.swift in Sources */,
+				C3333F152D2DE7030039C745 /* UserProfileView.swift in Sources */,
+				C3333F492D2EFD700039C745 /* CheckoutView.swift in Sources */,
+				C3333F2D2D2E99AB0039C745 /* ProfileView.swift in Sources */,
+				C3333F342D2EA0BF0039C745 /* GenderandNameView.swift in Sources */,
+				C3333F142D2DE7030039C745 /* RegistrationView.swift in Sources */,
+				C3333F102D2DE7030039C745 /* CartView.swift in Sources */,
+				C3333F162D2DE7030039C745 /* CartViewModel.swift in Sources */,
+				C3333F512D2F4A8A0039C745 /* PaymentView.swift in Sources */,
+				C3333F1F2D2DE7030039C745 /* ProductCategory.swift in Sources */,
+				C3333F402D2EA2BA0039C745 /* EmailandPasswordView.swift in Sources */,
+				C3333F202D2DE7030039C745 /* UserProfile.swift in Sources */,
+				C3333F222D2DE7030039C745 /* PatiBoxApp.swift in Sources */,
+				C3333F432D2EA3180039C745 /* Styles.swift in Sources */,
 				C3333E862D2D67EF0039C745 /* Persistence.swift in Sources */,
-				C3333E7F2D2D67EB0039C745 /* ContentView.swift in Sources */,
-				C3333E7D2D2D67EB0039C745 /* PatiBoxApp.swift in Sources */,
+				C3333F282D2E992D0039C745 /* AuthViewModel.swift in Sources */,
+				C3333F1D2D2DE7030039C745 /* Pet.swift in Sources */,
+				C3333F1C2D2DE7030039C745 /* FoodPreference.swift in Sources */,
 				C3333E892D2D67EF0039C745 /* PatiBox.xcdatamodeld in Sources */,
+				C3333F3C2D2EA1480039C745 /* ProductOptionsView.swift in Sources */,
+				C3333F362D2EA0DC0039C745 /* AgeandWeightView.swift in Sources */,
+				C3333F322D2EA0A40039C745 /* AnimalSelectionView.swift in Sources */,
+				C3333F4F2D2F48EA0039C745 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +663,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsefak.PatiBox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsefak.PatiBoxx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -472,7 +692,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsefak.PatiBox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsefak.PatiBoxx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
