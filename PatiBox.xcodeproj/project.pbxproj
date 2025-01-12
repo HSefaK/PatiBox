@@ -57,6 +57,12 @@
 		C3333F512D2F4A8A0039C745 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F502D2F4A8A0039C745 /* PaymentView.swift */; };
 		C3333F532D2FEEC10039C745 /* RegistrationIndividualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F522D2FEEC10039C745 /* RegistrationIndividualView.swift */; };
 		C3333F562D309ED30039C745 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F552D309ED30039C745 /* APIServices.swift */; };
+		C3333F582D32E9240039C745 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F572D32E9240039C745 /* OnboardingViewModel.swift */; };
+		C3333F5A2D32E93A0039C745 /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F592D32E93A0039C745 /* OnboardingPage.swift */; };
+		C3333F5C2D32E94B0039C745 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F5B2D32E94B0039C745 /* OnboardingView.swift */; };
+		C3333F5E2D32E95C0039C745 /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F5D2D32E95C0039C745 /* OnboardingPageView.swift */; };
+		C3333F602D345DFF0039C745 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F5F2D345DFE0039C745 /* ForgotPasswordViewModel.swift */; };
+		C3333F622D345E210039C745 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F612D345E210039C745 /* ForgotPasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +136,12 @@
 		C3333F502D2F4A8A0039C745 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
 		C3333F522D2FEEC10039C745 /* RegistrationIndividualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationIndividualView.swift; sourceTree = "<group>"; };
 		C3333F552D309ED30039C745 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		C3333F572D32E9240039C745 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		C3333F592D32E93A0039C745 /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
+		C3333F5B2D32E94B0039C745 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		C3333F5D2D32E95C0039C745 /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
+		C3333F5F2D345DFE0039C745 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		C3333F612D345E210039C745 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +246,9 @@
 				C3333F2E2D2EA0720039C745 /* RegisterationFlowView.swift */,
 				C3333F502D2F4A8A0039C745 /* PaymentView.swift */,
 				C3333F522D2FEEC10039C745 /* RegistrationIndividualView.swift */,
+				C3333F5B2D32E94B0039C745 /* OnboardingView.swift */,
+				C3333F5D2D32E95C0039C745 /* OnboardingPageView.swift */,
+				C3333F612D345E210039C745 /* ForgotPasswordView.swift */,
 			);
 			name = Views;
 			path = "../../../../Downloads/PatiBox-2/Views";
@@ -249,6 +264,8 @@
 				C3333F042D2DE7030039C745 /* UserProfileViewModel.swift */,
 				C3333F232D2DE7CD0039C745 /* ProductDetailViewModel.swift */,
 				C3333F272D2E992D0039C745 /* AuthViewModel.swift */,
+				C3333F572D32E9240039C745 /* OnboardingViewModel.swift */,
+				C3333F5F2D345DFE0039C745 /* ForgotPasswordViewModel.swift */,
 			);
 			name = ViewModels;
 			path = "../../../../Downloads/PatiBox-2/ViewModels";
@@ -264,6 +281,7 @@
 				C3333F0A2D2DE7030039C745 /* ProductCategory.swift */,
 				C3333F0B2D2DE7030039C745 /* UserProfile.swift */,
 				C3333F252D2DE8B90039C745 /* PetType.swift */,
+				C3333F592D32E93A0039C745 /* OnboardingPage.swift */,
 			);
 			name = Models;
 			path = "../../../../Downloads/PatiBox-2/Models";
@@ -455,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3333F182D2DE7030039C745 /* ProductListViewModel.swift in Sources */,
+				C3333F5E2D32E95C0039C745 /* OnboardingPageView.swift in Sources */,
 				C3333F262D2DE8B90039C745 /* PetType.swift in Sources */,
 				C3333F382D2EA0F80039C745 /* FoodPreferenceView.swift in Sources */,
 				C3333F192D2DE7030039C745 /* RegistrationViewModel.swift in Sources */,
@@ -468,6 +487,7 @@
 				C3333F472D2EFC0C0039C745 /* DeliveryPeriodView.swift in Sources */,
 				C3333F1E2D2DE7030039C745 /* Product.swift in Sources */,
 				C3333F2F2D2EA0720039C745 /* RegisterationFlowView.swift in Sources */,
+				C3333F5A2D32E93A0039C745 /* OnboardingPage.swift in Sources */,
 				C3333F3A2D2EA12B0039C745 /* ConsumptionView.swift in Sources */,
 				C3333F212D2DE7030039C745 /* ContentView.swift in Sources */,
 				C3333F532D2FEEC10039C745 /* RegistrationIndividualView.swift in Sources */,
@@ -486,17 +506,21 @@
 				C3333F512D2F4A8A0039C745 /* PaymentView.swift in Sources */,
 				C3333F1F2D2DE7030039C745 /* ProductCategory.swift in Sources */,
 				C3333F402D2EA2BA0039C745 /* EmailandPasswordView.swift in Sources */,
+				C3333F602D345DFF0039C745 /* ForgotPasswordViewModel.swift in Sources */,
 				C3333F202D2DE7030039C745 /* UserProfile.swift in Sources */,
 				C3333F222D2DE7030039C745 /* PatiBoxApp.swift in Sources */,
+				C3333F622D345E210039C745 /* ForgotPasswordView.swift in Sources */,
 				C3333F432D2EA3180039C745 /* Styles.swift in Sources */,
 				C3333E862D2D67EF0039C745 /* Persistence.swift in Sources */,
 				C3333F282D2E992D0039C745 /* AuthViewModel.swift in Sources */,
+				C3333F582D32E9240039C745 /* OnboardingViewModel.swift in Sources */,
 				C3333F1D2D2DE7030039C745 /* Pet.swift in Sources */,
 				C3333F1C2D2DE7030039C745 /* FoodPreference.swift in Sources */,
 				C3333E892D2D67EF0039C745 /* PatiBox.xcdatamodeld in Sources */,
 				C3333F3C2D2EA1480039C745 /* ProductOptionsView.swift in Sources */,
 				C3333F362D2EA0DC0039C745 /* AgeandWeightView.swift in Sources */,
 				C3333F322D2EA0A40039C745 /* AnimalSelectionView.swift in Sources */,
+				C3333F5C2D32E94B0039C745 /* OnboardingView.swift in Sources */,
 				C3333F4F2D2F48EA0039C745 /* Constants.swift in Sources */,
 				C3333F562D309ED30039C745 /* APIServices.swift in Sources */,
 			);

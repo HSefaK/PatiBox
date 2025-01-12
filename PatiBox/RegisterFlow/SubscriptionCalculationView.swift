@@ -14,43 +14,66 @@ struct SubscriptionCalculationView: View {
     @Binding var subscriptionDuration: Int
     @Binding var includesLitter: Bool
     var onNext: () -> Void
+  @Environment(\.colorScheme) var colorScheme
 
-    var body: some View {
-        VStack(spacing: 20) {
-            Text("Abonelik Hesaplama")
-                .font(.largeTitle)
-                .bold()
-                .foregroundColor(.indigo)
-
-            Picker("Abonelik Süresi (Ay)", selection: $subscriptionDuration) {
-                ForEach(0..<13) { value in
-                    Text("\(value) Ay").tag(value)
-                }
-            }
-            .pickerStyle(WheelPickerStyle())
-            .padding()
-
-            Text(selectedAnimal == "Köpek" ? dogConsumption(weight: weight) : catConsumption(weight: weight))
-                .font(.title2)
-                .multilineTextAlignment(.center)
-
-            if selectedAnimal == "Kedi" && includesLitter {
-                Text(catLitterConsumption())
-                    .font(.title2)
-                    .multilineTextAlignment(.center)
-            }
-
-            Button("Tamam") {
-                onNext()
-            }
-            .buttonStyle(PrimaryButtonStyle())
+  var body: some View {
+    VStack(spacing: 20) {
+      Text("Abonelik Hesaplama")
+        .font(.largeTitle)
+        .bold()
+        .foregroundColor(.indigo)
+      
+      Picker("Abonelik Süresi (Ay)", selection: $subscriptionDuration) {
+        ForEach(0..<13) { value in
+          Text("\(value) Ay").tag(value)
         }
-        .padding()
-        .background(Color.white)
-        .cornerRadius(20)
-        .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 0, y: 5)
+      }
+      .pickerStyle(WheelPickerStyle())
+      .padding()
+      
+      Text(selectedAnimal == "Köpek" ? dogConsumption(weight: weight) : catConsumption(weight: weight))
+        .font(.title2)
+        .multilineTextAlignment(.center)
+      
+      if selectedAnimal == "Kedi" && includesLitter {
+        Text(catLitterConsumption())
+          .font(.title2)
+          .multilineTextAlignment(.center)
+      }
+      
+      Button(action: {
+        onNext()
+      }) {
+        if colorScheme == .dark {
+          Text("Tamam")
+            .padding(.vertical,16)
+            .frame(maxWidth: .infinity)
+            .background(
+              LinearGradient(gradient: Gradient(colors: [AppColors.textPrimaryPurple, AppColors.textSecondaryOrange]), startPoint: .leading, endPoint: .trailing)
+                .opacity(0)
+            )
+            .border(LinearGradient(gradient: Gradient(colors: [AppColors.textPrimaryPurple, AppColors.textSecondaryOrange]), startPoint: .leading, endPoint: .trailing), width: 4 )
+            .foregroundColor(AppColors.textBackgroundWhite)
+            .cornerRadius(10)
+            .padding(.horizontal,8)
+        } else {
+          Text("Tamam")
+            .padding(.vertical,16)
+            .frame(maxWidth: .infinity)
+            .background(
+              LinearGradient(gradient: Gradient(colors: [AppColors.textPrimaryPurple, AppColors.textSecondaryOrange]), startPoint: .leading, endPoint: .trailing)
+            )
+            .foregroundColor(AppColors.textBackgroundWhite)
+            .cornerRadius(10)
+            .padding(.horizontal,8)
+          
+        }        }
+      .padding()
+      .background(Color(uiColor: .clear))
+      .cornerRadius(20)
+      .shadow(color: Color.secondary.opacity(0.4), radius: 10, x: 0, y: 4)
     }
-
+  }
     func dogConsumption(weight: String) -> String {
         guard let weightValue = Int(weight) else { return "Geçersiz ağırlık" }
         let dailyGram: Int

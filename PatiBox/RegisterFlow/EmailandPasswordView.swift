@@ -25,16 +25,16 @@ struct EmailAndPasswordView: View {
                 .keyboardType(.emailAddress)
                 .autocapitalization(.none)
                 .padding()
-                .background(Color.white)
+                .background(Color.primary)
                 .cornerRadius(10)
-                .shadow(color: Color.gray.opacity(0.3), radius: 5, x: 0, y: 2)
+                .shadow(color: Color.secondary.opacity(0.4), radius: 10, x: 0, y: 4)
 
             SecureField("Şifre", text: $password)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
-                .background(Color.white)
+                .background(Color.primary)
                 .cornerRadius(10)
-                .shadow(color: Color.gray.opacity(0.3), radius: 5, x: 0, y: 2)
+                .shadow(color: Color.secondary.opacity(0.4), radius: 10, x: 0, y: 4)
 
             Button(action: {
                 if email.isEmpty || password.isEmpty {
@@ -52,13 +52,13 @@ struct EmailAndPasswordView: View {
                     )
                     .foregroundColor(.white)
                     .cornerRadius(10)
-                    .shadow(color: Color.gray.opacity(0.3), radius: 5, x: 0, y: 2)
+                    .shadow(color: Color.secondary.opacity(0.4), radius: 10, x: 0, y: 4)
             }
         }
         .padding()
         .background(Color.indigo.opacity(0.05))
         .cornerRadius(20)
-        .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 0, y: 5)
+        .shadow(color: Color.secondary.opacity(0.4), radius: 10, x: 0, y: 4)
         .padding()
     }
 }

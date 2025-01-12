@@ -12,6 +12,7 @@ struct GenderAndNameView: View {
     @Binding var gender: String
     @Binding var name: String
     var onNext: () -> Void
+  @Environment(\.colorScheme) var colorScheme
 
     var body: some View {
         VStack(spacing: 20) {
@@ -27,8 +28,32 @@ struct GenderAndNameView: View {
             TextField("İsim", text: $name)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
 
-            Button("İleri") { onNext() }
-                .buttonStyle(PrimaryButtonStyle())
-        }
+          Button(action: {
+            onNext()
+          }) {
+          if colorScheme == .dark {
+            Text("İleri")
+              .padding(.vertical,16)
+              .frame(maxWidth: .infinity)
+            .background(
+              LinearGradient(gradient: Gradient(colors: [AppColors.textPrimaryPurple, AppColors.textSecondaryOrange]), startPoint: .leading, endPoint: .trailing)
+                .opacity(0)
+            )
+            .border(LinearGradient(gradient: Gradient(colors: [AppColors.textPrimaryPurple, AppColors.textSecondaryOrange]), startPoint: .leading, endPoint: .trailing), width: 4 )
+            .foregroundColor(AppColors.textBackgroundWhite)
+            .cornerRadius(10)
+            .padding(.horizontal,8)
+          } else {
+            Text("İleri")
+              .padding(.vertical,16)
+              .frame(maxWidth: .infinity)
+              .background(
+                LinearGradient(gradient: Gradient(colors: [AppColors.textPrimaryPurple, AppColors.textSecondaryOrange]), startPoint: .leading, endPoint: .trailing)
+              )
+              .foregroundColor(AppColors.textBackgroundWhite)
+              .cornerRadius(10)
+              .padding(.horizontal,8)
+          }
+          }        }
     }
 }

@@ -26,7 +26,7 @@ struct Constants {
 
 struct AppColors {
     static let backgroundStartLight = Color(UIColor(red: 1.00, green: 0.95, blue: 0.91, alpha: 1.00))
-    static let backgroundEndDark = Color(UIColor(red: 1.00, green: 0.95, blue: 0.91, alpha: 1.00))
+    static let backgroundEndDark = Color(UIColor(red: 1.00, green: 0.95, blue: 0.91, alpha: 0.94))
     static let buttonBackgroundOrange = Color(UIColor(red: 0.99, green: 0.65, blue: 0.35, alpha: 1.00))
     static let textPrimaryPurple = Color(UIColor(red: 0.34, green: 0.20, blue: 0.33, alpha: 1.00))
     static let textSecondaryOrange = Color(UIColor(red: 0.99, green: 0.65, blue: 0.35, alpha: 1.00))
