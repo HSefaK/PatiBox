@@ -14,9 +14,25 @@ struct SignInSheet: View {
   @Environment(\.colorScheme) var colorScheme
   
   var body: some View {
-    ScrollView {
-      NavigationView {
+    NavigationView {
+      ScrollView {
         VStack(spacing: 20) {
+          
+          HStack {
+  Spacer()
+                              Button(action: {
+                                  // Help action
+                              }) {
+                                  Image(systemName: "questionmark.circle")
+                                      .font(.title3)
+                                      .foregroundColor(Color(uiColor: .label))
+                                      .padding(8)
+                                      .background(Color(UIColor.systemBackground))
+                                      .clipShape(Circle())
+                                      .shadow(color: Color.secondary.opacity(0.4), radius: 10, x: 0, y: 4)
+                              }
+                          }
+                          .padding(.horizontal)
 
                           Spacer()
           VStack(spacing: 16) {
@@ -26,6 +42,7 @@ struct SignInSheet: View {
                                 HStack {
                                     Image(systemName: "globe") // Replace with Google icon
                                         .font(.title2)
+                                        .foregroundColor(Color(uiColor: .label))
                                     Text("Continue with Google")
                                         .font(.body)
                                         .foregroundColor(Color(uiColor: .label))
@@ -42,6 +59,7 @@ struct SignInSheet: View {
                                 HStack {
                                     Image(systemName: "f.square") // Replace with Facebook icon
                                         .font(.title2)
+                                        .foregroundColor(Color(uiColor: .label))
                                     Text("Continue with Facebook")
                                         .font(.body)
                                         .foregroundColor(Color(uiColor: .label))
@@ -156,10 +174,10 @@ struct SignInSheet: View {
             Spacer()
           }
           .padding()
-        }
+      }
+
+      }
 
     }
-    
-  }
   }
 

@@ -23,11 +23,15 @@ struct ProductOptionsView: View {
         .font(.title2)
       
       Toggle("Oyuncak", isOn: $includesToy)
+        .tint(AppColors.skyBlue)
       if selectedAnimal == "Kedi" {
         Toggle("Kum", isOn: $includesLitter)
+          .tint(AppColors.skyBlue)
       }
       Toggle("Vitamin", isOn: $includesVitamin)
+        .tint(AppColors.skyBlue)
       Toggle("İç Dış Parazit Tableti", isOn: $includesTablet)
+        .tint(AppColors.skyBlue)
       
       Button(action: {
         onNext()

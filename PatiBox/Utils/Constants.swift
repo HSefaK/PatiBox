@@ -32,6 +32,7 @@ struct AppColors {
     static let textSecondaryOrange = Color(UIColor(red: 0.99, green: 0.65, blue: 0.35, alpha: 1.00))
     static let accent = Color(UIColor(red: 1.00, green: 0.44, blue: 0.38, alpha: 1.00))
     static let textBackgroundWhite = Color(UIColor(red: 1.00, green: 1, blue: 1, alpha: 1.00))
+    static let skyBlue = Color(UIColor(red: 0.53, green: 0.81, blue: 0.92, alpha: 1.00))
 
 }
 
