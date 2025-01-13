@@ -63,6 +63,7 @@
 		C3333F5E2D32E95C0039C745 /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F5D2D32E95C0039C745 /* OnboardingPageView.swift */; };
 		C3333F602D345DFF0039C745 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F5F2D345DFE0039C745 /* ForgotPasswordViewModel.swift */; };
 		C3333F622D345E210039C745 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F612D345E210039C745 /* ForgotPasswordView.swift */; };
+		C3333F642D34A7880039C745 /* PaymentSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3333F632D34A7880039C745 /* PaymentSuccessView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +143,7 @@
 		C3333F5D2D32E95C0039C745 /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
 		C3333F5F2D345DFE0039C745 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 		C3333F612D345E210039C745 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		C3333F632D34A7880039C745 /* PaymentSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSuccessView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +251,7 @@
 				C3333F5B2D32E94B0039C745 /* OnboardingView.swift */,
 				C3333F5D2D32E95C0039C745 /* OnboardingPageView.swift */,
 				C3333F612D345E210039C745 /* ForgotPasswordView.swift */,
+				C3333F632D34A7880039C745 /* PaymentSuccessView.swift */,
 			);
 			name = Views;
 			path = "../../../../Downloads/PatiBox-2/Views";
@@ -489,6 +492,7 @@
 				C3333F2F2D2EA0720039C745 /* RegisterationFlowView.swift in Sources */,
 				C3333F5A2D32E93A0039C745 /* OnboardingPage.swift in Sources */,
 				C3333F3A2D2EA12B0039C745 /* ConsumptionView.swift in Sources */,
+				C3333F642D34A7880039C745 /* PaymentSuccessView.swift in Sources */,
 				C3333F212D2DE7030039C745 /* ContentView.swift in Sources */,
 				C3333F532D2FEEC10039C745 /* RegistrationIndividualView.swift in Sources */,
 				C3333F452D2EF0140039C745 /* SubscriptionCalculationView.swift in Sources */,
